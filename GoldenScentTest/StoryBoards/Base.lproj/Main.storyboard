@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-B8-Ncd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-B8-Ncd">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -28,10 +28,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n63-Zn-xcj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="159"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n63-Zn-xcj">
+                                                    <rect key="frame" x="0.0" y="20" width="390" height="139"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vhm-BW-wXq">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vhm-BW-wXq">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -45,7 +45,7 @@
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="n63-Zn-xcj" firstAttribute="top" secondItem="cKn-OA-tbY" secondAttribute="top" id="2Yk-TJ-FWc"/>
+                                                <constraint firstItem="n63-Zn-xcj" firstAttribute="top" secondItem="cKn-OA-tbY" secondAttribute="top" constant="20" id="2Yk-TJ-FWc"/>
                                                 <constraint firstAttribute="trailing" secondItem="n63-Zn-xcj" secondAttribute="trailing" id="Aai-T6-Nhw"/>
                                                 <constraint firstItem="n63-Zn-xcj" firstAttribute="leading" secondItem="cKn-OA-tbY" secondAttribute="leading" id="JJP-Zu-8xK"/>
                                                 <constraint firstAttribute="bottom" secondItem="n63-Zn-xcj" secondAttribute="bottom" id="r0Y-Dx-Slw"/>
