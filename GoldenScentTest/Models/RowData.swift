@@ -21,4 +21,10 @@ struct RowData: Decodable {
         case marginBottom = "row-margin-bottom"
         case height, columns
     }
+    
+    //MARK: Methods
+    func getFlotFromString(_ string: String) -> CGFloat? {
+        let numericString = string.trimmingCharacters(in: CharacterSet(charactersIn: "1234567890.").inverted)
+        return numericString.convetToCGFlot()
+    }
 }
