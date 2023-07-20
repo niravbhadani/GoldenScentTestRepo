@@ -14,6 +14,7 @@
 		E9B248E02A696B7800C3F7E2 /* SliderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248DF2A696B7800C3F7E2 /* SliderData.swift */; };
 		E9B248E42A696EFF00C3F7E2 /* ExtentionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248E32A696EFF00C3F7E2 /* ExtentionHelpers.swift */; };
 		E9B248E62A69714A00C3F7E2 /* DashboardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248E52A69714900C3F7E2 /* DashboardTableViewModel.swift */; };
+		E9B248E92A69743A00C3F7E2 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248E82A69743A00C3F7E2 /* DashboardTableViewCell.swift */; };
 		E9BED31C2A69642E001500B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BED31B2A69642E001500B0 /* AppDelegate.swift */; };
 		E9BED31E2A69642E001500B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BED31D2A69642E001500B0 /* SceneDelegate.swift */; };
 		E9BED3232A69642E001500B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BED3212A69642E001500B0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		E9B248DF2A696B7800C3F7E2 /* SliderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderData.swift; sourceTree = "<group>"; };
 		E9B248E32A696EFF00C3F7E2 /* ExtentionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionHelpers.swift; sourceTree = "<group>"; };
 		E9B248E52A69714900C3F7E2 /* DashboardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewModel.swift; sourceTree = "<group>"; };
+		E9B248E82A69743A00C3F7E2 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		E9BED3182A69642E001500B0 /* GoldenScentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenScentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BED31B2A69642E001500B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BED31D2A69642E001500B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,12 +89,12 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
-		E9B248D62A696A0000C3F7E2 /* ViewController */ = {
+		E9B248D62A696A0000C3F7E2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				E9B248D72A696A2B00C3F7E2 /* DashboardViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		E9B248D92A696A4600C3F7E2 /* Models */ = {
@@ -121,6 +123,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		E9B248E72A6973F300C3F7E2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E9B248E82A69743A00C3F7E2 /* DashboardTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		E9BED30F2A69642E001500B0 = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +154,9 @@
 			children = (
 				E9B248D42A6969CB00C3F7E2 /* ApplicationDelegates */,
 				E9B248D52A6969E400C3F7E2 /* StoryBoards */,
-				E9B248D62A696A0000C3F7E2 /* ViewController */,
+				E9B248D62A696A0000C3F7E2 /* ViewControllers */,
 				E9B248DA2A696A7E00C3F7E2 /* ViewModels */,
+				E9B248E72A6973F300C3F7E2 /* TableViewCells */,
 				E9B248E22A696EE400C3F7E2 /* Helpers */,
 				E9B248D92A696A4600C3F7E2 /* Models */,
 				E9BED3242A696433001500B0 /* Assets.xcassets */,
@@ -275,6 +286,7 @@
 				E9BED31C2A69642E001500B0 /* AppDelegate.swift in Sources */,
 				E9B248E62A69714A00C3F7E2 /* DashboardTableViewModel.swift in Sources */,
 				E9B248D82A696A2B00C3F7E2 /* DashboardViewController.swift in Sources */,
+				E9B248E92A69743A00C3F7E2 /* DashboardTableViewCell.swift in Sources */,
 				E9B248DC2A696AE400C3F7E2 /* RowData.swift in Sources */,
 				E9BED31E2A69642E001500B0 /* SceneDelegate.swift in Sources */,
 			);
