@@ -10,6 +10,7 @@
 		3D0B36CEAE987316ED93B901 /* Pods_GoldenScentTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F4EE294C010192C0A8AACE /* Pods_GoldenScentTest.framework */; };
 		E9B248D82A696A2B00C3F7E2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248D72A696A2B00C3F7E2 /* DashboardViewController.swift */; };
 		E9B248DC2A696AE400C3F7E2 /* RowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248DB2A696AE400C3F7E2 /* RowData.swift */; };
+		E9B248DE2A696B5B00C3F7E2 /* ColumnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B248DD2A696B5B00C3F7E2 /* ColumnData.swift */; };
 		E9BED31C2A69642E001500B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BED31B2A69642E001500B0 /* AppDelegate.swift */; };
 		E9BED31E2A69642E001500B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BED31D2A69642E001500B0 /* SceneDelegate.swift */; };
 		E9BED3232A69642E001500B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BED3212A69642E001500B0 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		7A80287AD8B451FF87DD5858 /* Pods-GoldenScentTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenScentTest.release.xcconfig"; path = "Target Support Files/Pods-GoldenScentTest/Pods-GoldenScentTest.release.xcconfig"; sourceTree = "<group>"; };
 		E9B248D72A696A2B00C3F7E2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E9B248DB2A696AE400C3F7E2 /* RowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowData.swift; sourceTree = "<group>"; };
+		E9B248DD2A696B5B00C3F7E2 /* ColumnData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnData.swift; sourceTree = "<group>"; };
 		E9BED3182A69642E001500B0 /* GoldenScentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenScentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BED31B2A69642E001500B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BED31D2A69642E001500B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B248DB2A696AE400C3F7E2 /* RowData.swift */,
+				E9B248DD2A696B5B00C3F7E2 /* ColumnData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B248DE2A696B5B00C3F7E2 /* ColumnData.swift in Sources */,
 				E9BED31C2A69642E001500B0 /* AppDelegate.swift in Sources */,
 				E9B248D82A696A2B00C3F7E2 /* DashboardViewController.swift in Sources */,
 				E9B248DC2A696AE400C3F7E2 /* RowData.swift in Sources */,
