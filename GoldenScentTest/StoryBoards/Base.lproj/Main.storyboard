@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KK7-vi-UPh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KK7-vi-UPh" customClass="DashboardTableCell" customModule="GoldenScentTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KK7-vi-UPh" id="cKn-OA-tbY">
@@ -38,6 +38,10 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="KK7-vi-UPh" id="csJ-Lw-vQ4"/>
+                                                        <outlet property="delegate" destination="KK7-vi-UPh" id="NpD-06-Drb"/>
+                                                    </connections>
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
@@ -47,6 +51,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="n63-Zn-xcj" secondAttribute="bottom" id="r0Y-Dx-Slw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionBottomMargin" destination="r0Y-Dx-Slw" id="UIc-3l-8cK"/>
+                                            <outlet property="collectionLeftMargin" destination="JJP-Zu-8xK" id="ch6-Qj-hv2"/>
+                                            <outlet property="collectionRightMargin" destination="Aai-T6-Nhw" id="J3a-tP-Fsb"/>
+                                            <outlet property="collectionView" destination="n63-Zn-xcj" id="ZD3-5X-c9O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
