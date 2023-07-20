@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+struct SliderData: Decodable {
+    let type: String
+    let src: String
+}
