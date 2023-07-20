@@ -154,3 +154,35 @@ class DashboardViewController: UIViewController {
         
     }
 }
+
+
+extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableViewModel.numberOfRows()
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardTableCell", for: indexPath) as? DashboardTableCell
+        else { return DashboardTableCell() }
+        
+        cell.rowData = tableViewModel.getRowDataForRow(row: indexPath.row)
+        cell.didSelectCell = { column in
+            //NOTE: Impliment logic for showing detail page
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let rowData = tableViewModel.getRowDataForRow(row: indexPath.row)
+        let rowHeight = rowData.getFlotFromString(rowData.height ?? "")
+        return rowHeight ?? 120
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+}
